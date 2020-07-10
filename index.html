@@ -1,108 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link href="" rel="shortcut-icon" type=""> 
-    <!-- we require differnt dimensions of favicon images -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <title>Permanent Information</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Permanent Information</title>
 </head>
 <body>
-   
-   <!--  paina navbar cheyyaledhu-->
-    <header>
-
-    </header>
-    <div class="form-class">
-        <div id="form-heading">
-            <h2>Permanent Information</h2>
-        </div>
-        <div id="form-sub-heading">
-            <h4>Please enter your information here</h4>
-        </div>
-        <form class="full-form">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <div class="input-heading">
-                    <label for="first-name">First Name *</label>
-                    <br>
-                    <input class="text-class" id="first-name" required size="30" type="text" max="25">
-                </div>
-                <div class="input-heading">
-                    <label for="middle-name">Middle Name</label>
-                    <br>
-                    <input class="text-class"id="middle-name" size="30" type="text" max="25">
-                </div>
-                <div class="input-heading">
-                    <label for="last-name">Last Name *</label>
-                    <br>
-                    <input class="text-class" id="last-name" required size="30" type="text" max="25">
-                </div>
-                <div class="input-heading">
-                    <label for="gender">Gender</label>
-                    <br>
-                    <input id="gender" list="gender-list" >
-                    <datalist id="gender-list">
-                        <option value="Male">
-                        <option value="Female">
-                        <option value="Other">       
-                    </datalist>
-                </div>
-                <div class="input-heading">
-                    <label for="date-of-birth">Date of Birth *</label>
-                    <br>
-                    <input id="date-of-birth" type="date" max="2100-12-31" min="1900-12-31" >
-                </div>
-                <div class="input-heading">
-                    <label for="pan-number">PAN Number *</label>
-                    <br>
-                    <input class="text-class" id="pan-number" required size="30" type="number" >
-                </div>
-                <div class="input-heading">
-                    <label for="father-name">Father Name *</label>
-                    <br>
-                    <input class="text-class" id="father-name" required size="30" type="text" max="25">
-                </div>
-               
-                
-            </fieldset>
-        </form>
-        <span>
-            <input type="submit" id="submit-id"> 
-        </span>
-        <span>
-            <input type="reset" id="reset-id"> 
-        </span>
+  <nav>
+    <div class="top-nav">
+      <div class="top-head">
+        <p class="top-head--logo">logo</p>
+        <h1 class="top-head--title">HEADING-MAIN</h1>
+      </div>
+      <div class="user-btn">
+        <li><a class="user-btn--link" href="#">Sign Up</a></li>
+        <li><a class="user-btn--link" href="#">Log In</a></li>
+      </div>
     </div>
-    <footer >
-        <div class="footer-class">
-            <div class="footer-left">
-                <p id="footer-left-text1">
-                    This is a product by Rookies Pvt. Ltd.
-                </p>
-                <span id="footer-left-text2">
-                    <a href="" target="_blank">
-                        Privacy Policy
-                    </a>
-                </span>
-                <span id="footer-left-text3">
-                    <a href="" target="_blank">
-                        Terms of Use
-                    </a>
-                </span>
+    <div class="navs">
+      <ul class="top-links">
+          <li><a class="top-links--btn one" href="#">1. Personal Info</a></li>
+          <li><a class="top-links--btn two" href="#">2. Income Sources</a></li>
+          <li><a class="top-links--btn three" href="#">3. Deductions</a></li>
+          <li><a class="top-links--btn four" href="#">4. Taxes Paid</a></li>
+          <li><a class="top-links--btn five" href="#">5. Tax Filing</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="form-class">
+    <div class="form-heading--1">
+        <h2>Permanent Information</h2>
+    </div>
+    <div class="form-heading--2">
+        <h4>Please enter your information here</h4>
+    </div>
+    <form class="full-form">
+        <fieldset>
+            <!-- <legend>Personal Information</legend> -->
+            <div class="input-heading">
+                <label for="fname">First Name *</label>
+                <br>
+                <input class="input-field--name" id="first-name" required size="30" type="text" max="25">
             </div>
-            <!-- please make use of the flex properties to get bothe the divs side by side -->
-            <div class="footer-right">
-                <ion-icon class="footer-right-icon" name="lock-closed-outline"></ion-icon>
-                <span>
-                    SSL Cerified Site <br>
-                    128-Bit Encryption 
-                </span>
+            <div class="input-heading">
+                <label for="mname">Middle Name</label>
+                <br>
+                <input class="input-field--name"id="middle-name" size="30" type="text" max="25">
             </div>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+            <div class="input-heading">
+                <label for="lname">Last Name *</label>
+                <br>
+                <input class="input-field--name" id="last-name" required size="30" type="text" max="25">
+            </div>
+            <div class="input-heading">
+              <label for="gender-status">Gender *</label>
+              <br>
+              <input id="gender" list="gender-list" class="input-field--other">
+              <datalist id="gender-list">
+                  <option value="Male" selected>
+                  <option value="Female">
+                  <option value="Other">       
+              </datalist>
+          </div>
+            <div class="input-heading">
+                <label for="date-of-birth">Date of Birth *</label>
+                <br>
+                <input id="date-of-birth" type="date" max="2100-12-31" min="1900-12-31" >
+            </div>
+            <div class="input-heading">
+                <label for="pan-number">PAN Number *</label>
+                <br>
+                <input class="input-field--other" id="pan-number" required size="30" type="number" >
+            </div>
+            <div class="input-heading">
+                <label for="father-name">Father Name *</label>
+                <br>
+                <input class="input-field--name" id="father-name" required size="30" type="text" max="25">
+            </div>
+            <div class="input-heading">
+              <label for="maritial-status">Maritial Status *</label>
+              <br>
+              <input id="maritial-status" list="maritial-status-list" class="input-field--other" >
+              <datalist id="maritial-status-list">
+                  <option value="Prefer not to disclose" selected>
+                  <option value="Married">
+                  <option value="Unmarried">       
+              </datalist>
+          </div>
+        </fieldset>
+    </form>
+    <div class="btns">
+      <button class="btn btn-save" type="submit" id="submit-id">Save</button>
+      <button class="btn btn-reset" type="submit" id="reset-id">Reset</button>
+    </div>
+  </header>   
+  <footer class="footer">
+      <p class="footer-line">Project is a product by PRODUCT software Pvt. Ltd.</p>
+      <ul class="footer-links">
+        <li><a class="footer-links--link" href="#">Privacy Policy</a></li>
+        <li><a class="footer-links--link" href="#">Terms of Use</a></li>
+      </ul>
+  </footer>
+
+
+
+
+
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>

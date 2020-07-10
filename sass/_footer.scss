@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0 1rem 0;
+  align-items: center;
+
+  &-line {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &-links {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+
+    &--link {
+      text-decoration: none;
+      color: #002e4d;
+      margin-right: 2rem;
+      font-size: 1.25rem;
+    }
+  }
+}
