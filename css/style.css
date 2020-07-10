@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 790px) {
+    html {
+      font-size: 48%; } }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100vw; }
+  nav .top-nav {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    nav .top-nav .top-head {
+      display: flex;
+      padding: 3rem;
+      align-items: center; }
+      nav .top-nav .top-head--logo {
+        padding: 0.5rem;
+        font-family: 'Open Sans', sans-serif; }
+      nav .top-nav .top-head--title {
+        padding: 0.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem; }
+    nav .top-nav .user-btn {
+      display: flex; }
+      nav .top-nav .user-btn li {
+        list-style: none;
+        margin-right: 2rem; }
+      nav .top-nav .user-btn--link {
+        text-decoration: none;
+        cursor: pointer;
+        color: #242424;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 1rem; }
+        nav .top-nav .user-btn--link:hover, nav .top-nav .user-btn--link:active, nav .top-nav .user-btn--link:focus {
+          color: #fff;
+          background-color: #3ac8dc; }
+  nav .top-links {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    nav .top-links > * {
+      margin-right: 5rem; }
+    nav .top-links--btn {
+      color: #242424;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1.25rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      border: 0.5px solid #b1b1b1;
+      /* background-color: #242424; */
+      text-decoration: none;
+      cursor: pointer; }
+      nav .top-links--btn:hover, nav .top-links--btn:active, nav .top-links--btn:focus {
+        color: #f8f8f8; }
+  nav .one:hover,
+  nav .one:focus,
+  nav .one:active {
+    border: 0.5px solid #3ac8dc;
+    background-color: #3ac8dc; }
+  nav .two:hover,
+  nav .two:focus,
+  nav .two:active {
+    border: 0.5px solid #8dbd0c;
+    background-color: #8dbd0c; }
+  nav .three:hover,
+  nav .three:focus,
+  nav .three:active {
+    border: 0.5px solid #ffb004;
+    background-color: #ffb004; }
+  nav .four:hover,
+  nav .four:focus,
+  nav .four:active {
+    border: 0.5px solid #ff5873;
+    background-color: #ff5873; }
+  nav .five:hover,
+  nav .five:focus,
+  nav .five:active {
+    border: 0.5px solid #7772e6;
+    background-color: #7772e6; }
+
+.form-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  font-size: 1.6rem; }
+  .form-class .form-heading--1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem; }
+  .form-class .form-heading--2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem; }
+
+.full-form .input-heading {
+  padding: 1rem 10rem 1rem 2rem; }
+  .full-form .input-heading .input-field--name {
+    width: 50rem;
+    height: 3rem; }
+  .full-form .input-heading .input-field--other {
+    width: 10rem;
+    height: 2rem; }
+
+fieldset {
+  border: 1px solid #24242467;
+  width: 75rem; }
+
+.btn {
+  padding: 8px 14px;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer; }
+  @media only screen and (max-width: 790px) {
+    .btn {
+      padding: 5px 10px; } }
+  .btn-save {
+    margin-right: 2rem;
+    background-color: #2daebf;
+    border: 1px solid #2daebf; }
+    .btn-save:hover, .btn-save:active, .btn-save:focus {
+      background-color: #228e9c; }
+  .btn-reset {
+    background-color: #ff5100;
+    border: 1px solid #ff5100; }
+    .btn-reset:hover, .btn-reset:active, .btn-reset:focus {
+      background-color: #e74900; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0 1rem 0;
+  align-items: center; }
+  .footer-line {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif; }
+  .footer-links {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem; }
+    .footer-links--link {
+      text-decoration: none;
+      color: #002e4d;
+      margin-right: 2rem;
+      font-size: 1.25rem; }
