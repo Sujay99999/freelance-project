@@ -24,7 +24,7 @@
         <ion-icon name="menu-outline" onclick = "on()" class="burger-menu"></ion-icon>
         <ion-icon name="close-outline" onclick = "off()" class="burger-close hidden"></ion-icon>
         <ul class="top-links">
-            <li><a class="top-links--btn one" href="#">1. Personal Info</a></li>
+            <li><a class="top-links--btn one" href="/">1. Personal Info</a></li>
             <li><a class="top-links--btn two" href="#">2. Income Sources</a></li>
             <li><a class="top-links--btn three" href="#">3. Deductions</a></li>
             <li><a class="top-links--btn four" href="#">4. Taxes Paid</a></li>
@@ -40,28 +40,28 @@
     <div class="form-heading--2">
         <h4>Please enter your information here</h4>
     </div>
-    <form class="full-form">
+    <form class="full-form" action="/" id="peronal-info">
         <fieldset>
             <!-- <legend>Personal Information</legend> -->
             <div class="input-heading">
                 <label for="fname">First Name *</label>
                 <br>
-                <input class="input-field--name" id="first-name" required size="30" type="text" max="25">
+                <input class="input-field--name" id="first-name" required size="30" type="text" name="formFname" max="25">
             </div>
             <div class="input-heading">
                 <label for="mname">Middle Name</label>
                 <br>
-                <input class="input-field--name"id="middle-name" size="30" type="text" max="25">
+                <input class="input-field--name"id="middle-name" size="30" type="text" name="formMname" max="25">
             </div>
             <div class="input-heading">
                 <label for="lname">Last Name *</label>
                 <br>
-                <input class="input-field--name" id="last-name" required size="30" type="text" max="25">
+                <input class="input-field--name" id="last-name" required size="30" type="text" name="formLname" max="25">
             </div>
             <div class="input-heading">
               <label for="gender-status">Gender *</label>
               <br>
-              <input id="gender" list="gender-list" class="input-field--other">
+              <input id="gender" list="gender-list" class="input-field--gender" name="formGender">
               <datalist id="gender-list">
                   <option value="Male" selected>
                   <option value="Female">
@@ -71,22 +71,22 @@
             <div class="input-heading">
                 <label for="date-of-birth">Date of Birth *</label>
                 <br>
-                <input id="date-of-birth" type="date" max="2100-12-31" min="1900-12-31" >
+                <input id="date-of-birth" type="date" max="2100-12-31" min="1900-12-31" class="input-heading--" name="formDob">
             </div>
             <div class="input-heading">
                 <label for="pan-number">PAN Number *</label>
                 <br>
-                <input class="input-field--other" id="pan-number" required size="30" type="number" >
+                <input class="input-field--pan" id="pan-number" required size="30" type="number" name="formPan" >
             </div>
             <div class="input-heading">
                 <label for="father-name">Father Name *</label>
                 <br>
-                <input class="input-field--name" id="father-name" required size="30" type="text" max="25">
+                <input class="input-field--name" id="father-name" required size="30" type="text" name="formFaname" max="25">
             </div>
             <div class="input-heading">
-              <label for="maritial-status">Maritial Status *</label>
+              <label for="maritial-status" >Maritial Status *</label>
               <br>
-              <input id="maritial-status" list="maritial-status-list" class="input-field--other" >
+              <input id="maritial-status" list="maritial-status-list" class="input-field--maritial-status" name="formMstatus">
               <datalist id="maritial-status-list">
                   <option value="Prefer not to disclose" selected>
                   <option value="Married">
@@ -97,7 +97,7 @@
     </form>
     <div class="btns">
       <button class="btn btn-save" type="submit" id="submit-id">Save</button>
-      <button class="btn btn-reset" type="submit" id="reset-id">Reset</button>
+      <button class="btn btn-reset" type="submit" id="reset-id" onclick="reset()">Reset</button>
     </div>
   </header>   
   <footer class="footer">
