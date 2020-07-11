@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./app.js"></script>
   <title>Permanent Information</title>
 </head>
 <body>
@@ -19,15 +20,17 @@
         <li><a class="user-btn--link" href="#">Log In</a></li>
       </div>
     </div>
-    <div class="navs">
-      <ul class="top-links">
-          <li><a class="top-links--btn one" href="#">1. Personal Info</a></li>
-          <li><a class="top-links--btn two" href="#">2. Income Sources</a></li>
-          <li><a class="top-links--btn three" href="#">3. Deductions</a></li>
-          <li><a class="top-links--btn four" href="#">4. Taxes Paid</a></li>
-          <li><a class="top-links--btn five" href="#">5. Tax Filing</a></li>
-      </ul>
-    </div>
+      <div class="navs">
+        <ion-icon name="menu-outline" onclick = "on()" class="burger-menu"></ion-icon>
+        <ion-icon name="close-outline" onclick = "off()" class="burger-close hidden"></ion-icon>
+        <ul class="top-links">
+            <li><a class="top-links--btn one" href="#">1. Personal Info</a></li>
+            <li><a class="top-links--btn two" href="#">2. Income Sources</a></li>
+            <li><a class="top-links--btn three" href="#">3. Deductions</a></li>
+            <li><a class="top-links--btn four" href="#">4. Taxes Paid</a></li>
+            <li><a class="top-links--btn five" href="#">5. Tax Filing</a></li>
+        </ul>
+      </div>
   </nav>
 
   <header class="form-class">

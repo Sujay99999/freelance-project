@@ -53,11 +53,20 @@
       &--name {
         width: 50rem;
         height: 3rem;
+        @media only screen and (max-width: 540px) {
+          width: 40rem;
+        }
+        @media only screen and (max-width: 430px) {
+          width: 30rem;
+        }
       }
 
       &--other {
         width: 10rem;
         height: 2rem;
+        @media only screen and (max-width: 540px) {
+          width: 8rem;
+        }
       }
     }
   }
@@ -67,6 +76,18 @@
 fieldset {
   border: 1px solid #24242467;
   width: 75rem;
+
+  @media only screen and (max-width: 650px) {
+    width: 68rem;
+  }
+  
+  @media only screen and (max-width: 540px) {
+    width: 50rem;
+  }
+
+  @media only screen and (max-width: 430px) {
+    width: 30rem;
+  }
 }
 
 

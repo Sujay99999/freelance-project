@@ -14,10 +14,18 @@ html {
   font-size: 62.5%;  //1rem = 10px,  10px/16px = 62.5%
 
   @media only screen and (max-width: 1200px) {
-    font-size: 50%;
+    font-size: 60%;
   }
   
   @media only screen and (max-width: 790px) {
-    font-size: 48%;
+    font-size: 56%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    font-size: 52%;
+  }
+  
+  @media only screen and (max-width: 372px) {
+    font-size: 42%;
   }
 }
