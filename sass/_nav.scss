@@ -32,6 +32,9 @@ nav {
       li {
         list-style: none;
         margin-right: 2rem;
+        @media only screen and (max-width: 430px) {
+          margin-right: 0rem;
+        }
       }
 
       &--link {
@@ -65,8 +68,27 @@ nav {
     display: flex;
     justify-content: center;
 
+    @media only screen and (max-width: 650px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      display: none;
+      & > * {
+        margin-bottom: 2rem;
+      }
+    }
+
     & > *{
       margin-right: 5rem;
+
+      @media only screen and (max-width: 849px) {
+        margin-right: 3rem;
+      }
+      
+      @media only screen and (max-width: 640px) {
+        margin-right: 1rem;
+      }
     }
 
     &--btn {
@@ -87,6 +109,10 @@ nav {
       &:active,
       &:focus { 
         color: #f8f8f8;
+      }
+
+      @media only screen and (max-width: 650px) {
+        border: none;
       }
     }
   }
@@ -128,3 +154,25 @@ nav {
   
 }
 
+
+
+.burger-menu,
+.burger-close {
+  transform: scale(3) translateX(1rem);
+
+  @media only screen and (max-width: 650px) {
+    display: block;
+  }
+  
+  @media only screen and (min-width: 651px) {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.hidden {
+  display: none;
+}

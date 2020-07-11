@@ -12,10 +12,16 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 1200px) {
     html {
-      font-size: 50%; } }
+      font-size: 60%; } }
   @media only screen and (max-width: 790px) {
     html {
-      font-size: 48%; } }
+      font-size: 56%; } }
+  @media only screen and (max-width: 700px) {
+    html {
+      font-size: 52%; } }
+  @media only screen and (max-width: 372px) {
+    html {
+      font-size: 42%; } }
 
 nav {
   display: flex;
@@ -42,6 +48,9 @@ nav {
       nav .top-nav .user-btn li {
         list-style: none;
         margin-right: 2rem; }
+        @media only screen and (max-width: 430px) {
+          nav .top-nav .user-btn li {
+            margin-right: 0rem; } }
       nav .top-nav .user-btn--link {
         text-decoration: none;
         cursor: pointer;
@@ -60,8 +69,23 @@ nav {
     list-style: none;
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 650px) {
+      nav .top-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        display: none; }
+        nav .top-links > * {
+          margin-bottom: 2rem; } }
     nav .top-links > * {
       margin-right: 5rem; }
+      @media only screen and (max-width: 849px) {
+        nav .top-links > * {
+          margin-right: 3rem; } }
+      @media only screen and (max-width: 640px) {
+        nav .top-links > * {
+          margin-right: 1rem; } }
     nav .top-links--btn {
       color: #242424;
       text-transform: uppercase;
@@ -76,6 +100,9 @@ nav {
       cursor: pointer; }
       nav .top-links--btn:hover, nav .top-links--btn:active, nav .top-links--btn:focus {
         color: #f8f8f8; }
+      @media only screen and (max-width: 650px) {
+        nav .top-links--btn {
+          border: none; } }
   nav .one:hover,
   nav .one:focus,
   nav .one:active {
@@ -102,6 +129,24 @@ nav {
     border: 0.5px solid #7772e6;
     background-color: #7772e6; }
 
+.burger-menu,
+.burger-close {
+  transform: scale(3) translateX(1rem); }
+  @media only screen and (max-width: 650px) {
+    .burger-menu,
+    .burger-close {
+      display: block; } }
+  @media only screen and (min-width: 651px) {
+    .burger-menu,
+    .burger-close {
+      display: none; } }
+  .burger-menu:hover,
+  .burger-close:hover {
+    cursor: pointer; }
+
+.hidden {
+  display: none; }
+
 .form-class {
   display: flex;
   flex-direction: column;
@@ -122,13 +167,31 @@ nav {
   .full-form .input-heading .input-field--name {
     width: 50rem;
     height: 3rem; }
+    @media only screen and (max-width: 540px) {
+      .full-form .input-heading .input-field--name {
+        width: 40rem; } }
+    @media only screen and (max-width: 430px) {
+      .full-form .input-heading .input-field--name {
+        width: 30rem; } }
   .full-form .input-heading .input-field--other {
     width: 10rem;
     height: 2rem; }
+    @media only screen and (max-width: 540px) {
+      .full-form .input-heading .input-field--other {
+        width: 8rem; } }
 
 fieldset {
   border: 1px solid #24242467;
   width: 75rem; }
+  @media only screen and (max-width: 650px) {
+    fieldset {
+      width: 68rem; } }
+  @media only screen and (max-width: 540px) {
+    fieldset {
+      width: 50rem; } }
+  @media only screen and (max-width: 430px) {
+    fieldset {
+      width: 30rem; } }
 
 .btn {
   padding: 8px 14px;
