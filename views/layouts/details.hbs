@@ -1,0 +1,28 @@
+<h1>Personal Details</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Middle Name</th>
+    <th>Last Name</th>
+    <th>Gender</th>
+    <th>DOB</th>
+    <th>PAN</th>
+    <th>Father Name</th>
+    <th>Maritial Status</th>
+  </tr>
+  {{#each data}}
+  <tr>
+    <td>{{this.formID}}</td>
+    <td>{{this.formFName}}</td>
+    <td>{{this.formMName}}</td>
+    <td>{{this.formLName}}</td>
+    <td>{{this.formGender}}</td>
+    <td>{{this.formDOB}}</td>
+    <td>{{this.formPAN}}</td>
+    <td>{{this.formFaName}}</td>
+    <td>{{this.formMSTATUS}}</td>
+  </tr>
+  {{/each}}
+</table>

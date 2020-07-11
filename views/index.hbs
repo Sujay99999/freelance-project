@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  {{!-- <link rel="stylesheet" href="../css/style.css"> --}}
+  <style>
+        * {
+      margin: 0;
+      padding: 0; }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit; }
+
+    html {
+      box-sizing: border-box;
+      font-size: 62.5%; }
+      @media only screen and (max-width: 1200px) {
+        html {
+          font-size: 60%; } }
+      @media only screen and (max-width: 790px) {
+        html {
+          font-size: 56%; } }
+      @media only screen and (max-width: 700px) {
+        html {
+          font-size: 52%; } }
+      @media only screen and (max-width: 372px) {
+        html {
+          font-size: 42%; } }
+
+    ::selection {
+      background-color: #52eb52;
+      color: #fff; }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      width: 100vw; }
+      nav .top-nav {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        nav .top-nav .top-head {
+          display: flex;
+          padding: 3rem;
+          align-items: center; }
+          nav .top-nav .top-head--logo {
+            padding: 0.5rem;
+            font-family: 'Open Sans', sans-serif; }
+          nav .top-nav .top-head--title {
+            padding: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem; }
+        nav .top-nav .user-btn {
+          display: flex; }
+          nav .top-nav .user-btn li {
+            list-style: none;
+            margin-right: 2rem; }
+            @media only screen and (max-width: 430px) {
+              nav .top-nav .user-btn li {
+                margin-right: 0rem; } }
+          nav .top-nav .user-btn--link {
+            text-decoration: none;
+            cursor: pointer;
+            color: #242424;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.25rem;
+            padding: 1rem 1rem 1rem 1rem;
+            border-radius: 1rem; }
+            nav .top-nav .user-btn--link:hover, nav .top-nav .user-btn--link:active, nav .top-nav .user-btn--link:focus {
+              color: #fff;
+              background-color: #3ac8dc; }
+      nav .top-links {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center; }
+        @media only screen and (max-width: 650px) {
+          nav .top-links {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 2rem;
+            margin-top: 2rem;
+            display: none; }
+            nav .top-links > * {
+              margin-bottom: 2rem; } }
+        nav .top-links > * {
+          margin-right: 5rem; }
+          @media only screen and (max-width: 849px) {
+            nav .top-links > * {
+              margin-right: 3rem; } }
+          @media only screen and (max-width: 640px) {
+            nav .top-links > * {
+              margin-right: 1rem; } }
+        nav .top-links--btn {
+          color: #242424;
+          text-transform: uppercase;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 1.25rem;
+          padding: 1rem;
+          border-radius: 1rem;
+          border: 0.5px solid #b1b1b1;
+          /* background-color: #242424; */
+          text-decoration: none;
+          cursor: pointer; }
+          nav .top-links--btn:hover, nav .top-links--btn:active, nav .top-links--btn:focus {
+            color: #f8f8f8; }
+          @media only screen and (max-width: 650px) {
+            nav .top-links--btn {
+              border: none; } }
+      nav .one:hover,
+      nav .one:focus,
+      nav .one:active {
+        border: 0.5px solid #3ac8dc;
+        background-color: #3ac8dc; }
+      nav .two:hover,
+      nav .two:focus,
+      nav .two:active {
+        border: 0.5px solid #8dbd0c;
+        background-color: #8dbd0c; }
+      nav .three:hover,
+      nav .three:focus,
+      nav .three:active {
+        border: 0.5px solid #ffb004;
+        background-color: #ffb004; }
+      nav .four:hover,
+      nav .four:focus,
+      nav .four:active {
+        border: 0.5px solid #ff5873;
+        background-color: #ff5873; }
+      nav .five:hover,
+      nav .five:focus,
+      nav .five:active {
+        border: 0.5px solid #7772e6;
+        background-color: #7772e6; }
+
+    .burger-menu,
+    .burger-close {
+      transform: scale(3) translateX(1rem); }
+      @media only screen and (max-width: 650px) {
+        .burger-menu,
+        .burger-close {
+          display: block; } }
+      @media only screen and (min-width: 651px) {
+        .burger-menu,
+        .burger-close {
+          display: none; } }
+      .burger-menu:hover,
+      .burger-close:hover {
+        cursor: pointer; }
+
+    .hidden {
+      display: none; }
+
+    .form-class {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5rem;
+      font-size: 1.6rem; }
+      .form-class .form-heading--1 {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0.5rem; }
+      .form-class .form-heading--2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem; }
+
+    .full-form .input-heading {
+      padding: 1rem 10rem 1rem 2rem; }
+      .full-form .input-heading .input-field--name {
+        width: 50rem;
+        height: 3rem; }
+        @media only screen and (max-width: 540px) {
+          .full-form .input-heading .input-field--name {
+            width: 40rem; } }
+        @media only screen and (max-width: 430px) {
+          .full-form .input-heading .input-field--name {
+            width: 30rem; } }
+      .full-form .input-heading .input-field--gender {
+        width: 10rem;
+        height: 3rem; }
+        @media only screen and (max-width: 540px) {
+          .full-form .input-heading .input-field--gender {
+            width: 8rem; } }
+      .full-form .input-heading .input-field--pan {
+        height: 3rem; }
+      .full-form .input-heading .input-field--maritial-status {
+        height: 3rem; }
+
+    fieldset {
+      border: 1px solid #24242467;
+      width: 75rem; }
+      @media only screen and (max-width: 650px) {
+        fieldset {
+          width: 68rem; } }
+      @media only screen and (max-width: 540px) {
+        fieldset {
+          width: 50rem; } }
+      @media only screen and (max-width: 430px) {
+        fieldset {
+          width: 30rem; } }
+
+    .btn {
+      padding: 8px 14px;
+      margin-top: 2rem;
+      border-radius: 1rem;
+      color: #fff;
+      cursor: pointer; }
+      @media only screen and (max-width: 790px) {
+        .btn {
+          padding: 5px 10px; } }
+      .btn-save {
+        margin-right: 2rem;
+        background-color: #2daebf;
+        border: 1px solid #2daebf; }
+        .btn-save:hover, .btn-save:active, .btn-save:focus {
+          background-color: #228e9c; }
+      .btn-reset {
+        background-color: #ff5100;
+        border: 1px solid #ff5100; }
+        .btn-reset:hover, .btn-reset:active, .btn-reset:focus {
+          background-color: #e74900; }
+
+    label,
+    input {
+      font-family: 'Open Sans', sans-serif; }
+
+    input {
+      align-text: center; }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      margin: 5rem 0 1rem 0;
+      align-items: center; }
+      .footer-line {
+        font-size: 1.25rem;
+        font-family: 'Montserrat', sans-serif; }
+      .footer-links {
+        display: flex;
+        list-style: none;
+        margin-top: 1rem; }
+        .footer-links--link {
+          text-decoration: none;
+          color: #002e4d;
+          margin-right: 2rem;
+          font-size: 1.25rem; }
+
+  </style>
+  {{!-- <script src="../app.js"></script> --}}
+  <script>
+    const on = () => {
+      document.querySelector('.burger-menu').classList.toggle('hidden');
+      document.querySelector('.burger-close').classList.toggle('hidden');
+      document.querySelector('.top-links').style.display = "block";
+    };
+    const off = () => {
+      document.querySelector('.burger-close').classList.toggle('hidden');
+      document.querySelector('.burger-menu').classList.toggle('hidden');
+      document.querySelector('.top-links').style.display = "none";
+    }
+    on();
+    off();
+
+    const resetForm = () => {
+      document.querySelectorAll('input-heading').reset();
+    };
+
+    resetForm();
+  </script>
+  <title>Permanent Information</title>
+</head>
+
+<body>
+  <nav>
+    <div class="top-nav">
+      <div class="top-head">
+        <p class="top-head--logo">logo</p>
+        <h1 class="top-head--title">HEADING-MAIN</h1>
+      </div>
+      <div class="user-btn">
+        <li><a class="user-btn--link" href="#">Sign Up</a></li>
+        <li><a class="user-btn--link" href="#">Log In</a></li>
+      </div>
+    </div>
+      <div class="navs">
+        <ion-icon name="menu-outline" onclick = "on()" class="burger-menu"></ion-icon>
+        <ion-icon name="close-outline" onclick = "off()" class="burger-close hidden"></ion-icon>
+        <ul class="top-links">
+            <li><a class="top-links--btn one" href="/">1. Personal Info</a></li>
+            <li><a class="top-links--btn two" href="#">2. Income Sources</a></li>
+            <li><a class="top-links--btn three" href="#">3. Deductions</a></li>
+            <li><a class="top-links--btn four" href="#">4. Taxes Paid</a></li>
+            <li><a class="top-links--btn five" href="#">5. Tax Filing</a></li>
+        </ul>
+      </div>
+  </nav>
+
+  <header class="form-class">
+    <div class="form-heading--1">
+        <h2>Permanent Information</h2>
+    </div>
+    <div class="form-heading--2">
+        <h4>Please enter your information here</h4>
+    </div>
+    <form class="full-form" action="/" id="peronal-info">
+        <fieldset>
+            <!-- <legend>Personal Information</legend> -->
+            <div class="input-heading">
+                <label for="fname">First Name *</label>
+                <br>
+                <input class="input-field--name" id="first-name" required size="30" type="text" name="formFname" max="25">
+            </div>
+            <div class="input-heading">
+                <label for="mname">Middle Name</label>
+                <br>
+                <input class="input-field--name"id="middle-name" size="30" type="text" name="formMname" max="25">
+            </div>
+            <div class="input-heading">
+                <label for="lname">Last Name *</label>
+                <br>
+                <input class="input-field--name" id="last-name" required size="30" type="text" name="formLname" max="25">
+            </div>
+            <div class="input-heading">
+              <label for="gender-status">Gender *</label>
+              <br>
+              <input id="gender" list="gender-list" class="input-field--gender" name="formGender">
+              <datalist id="gender-list">
+                  <option value="Male" selected>
+                  <option value="Female">
+                  <option value="Other">       
+              </datalist>
+          </div>
+            <div class="input-heading">
+                <label for="date-of-birth">Date of Birth *</label>
+                <br>
+                <input id="date-of-birth" type="date" max="2100-12-31" min="1900-12-31" class="input-heading--" name="formDob">
+            </div>
+            <div class="input-heading">
+                <label for="pan-number">PAN Number *</label>
+                <br>
+                <input class="input-field--pan" id="pan-number" required size="30" type="number" name="formPan" >
+            </div>
+            <div class="input-heading">
+                <label for="father-name">Father Name *</label>
+                <br>
+                <input class="input-field--name" id="father-name" required size="30" type="text" name="formFaname" max="25">
+            </div>
+            <div class="input-heading">
+              <label for="maritial-status" >Maritial Status *</label>
+              <br>
+              <input id="maritial-status" list="maritial-status-list" class="input-field--maritial-status" name="formMstatus">
+              <datalist id="maritial-status-list">
+                  <option value="Prefer not to disclose" selected>
+                  <option value="Married">
+                  <option value="Unmarried">       
+              </datalist>
+          </div>
+        </fieldset>
+    </form>
+    <div class="btns">
+      <button class="btn btn-save" type="submit" id="submit-id">Save</button>
+      <button class="btn btn-reset" type="submit" id="reset-id" onclick="reset()">Reset</button>
+    </div>
+  </header>   
+  <footer class="footer">
+      <p class="footer-line">Project is a product by PRODUCT software Pvt. Ltd.</p>
+      <ul class="footer-links">
+        <li><a class="footer-links--link" href="#">Privacy Policy</a></li>
+        <li><a class="footer-links--link" href="#">Terms of Use</a></li>
+      </ul>
+  </footer>
+
+
+
+
+
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+</html>

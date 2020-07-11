@@ -29,3 +29,10 @@ html {
     font-size: 42%;
   }
 }
+
+
+
+::selection {
+  background-color: rgb(82, 235, 82);
+  color: #fff;
+}

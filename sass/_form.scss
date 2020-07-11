@@ -61,12 +61,20 @@
         }
       }
 
-      &--other {
+      &--gender {
         width: 10rem;
-        height: 2rem;
+        height: 3rem;
         @media only screen and (max-width: 540px) {
           width: 8rem;
         }
+      }
+
+      &--pan {
+        height: 3rem;
+      }
+
+      &--maritial-status {
+        height: 3rem;
       }
     }
   }
@@ -125,4 +133,14 @@ fieldset {
       background-color: #e74900;
     }
   }
+}
+
+
+label,
+input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input {
+  align-text: center;
 }

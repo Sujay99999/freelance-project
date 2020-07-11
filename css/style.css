@@ -23,6 +23,10 @@ html {
     html {
       font-size: 42%; } }
 
+::selection {
+  background-color: #52eb52;
+  color: #fff; }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -173,12 +177,16 @@ nav {
     @media only screen and (max-width: 430px) {
       .full-form .input-heading .input-field--name {
         width: 30rem; } }
-  .full-form .input-heading .input-field--other {
+  .full-form .input-heading .input-field--gender {
     width: 10rem;
-    height: 2rem; }
+    height: 3rem; }
     @media only screen and (max-width: 540px) {
-      .full-form .input-heading .input-field--other {
+      .full-form .input-heading .input-field--gender {
         width: 8rem; } }
+  .full-form .input-heading .input-field--pan {
+    height: 3rem; }
+  .full-form .input-heading .input-field--maritial-status {
+    height: 3rem; }
 
 fieldset {
   border: 1px solid #24242467;
@@ -213,6 +221,13 @@ fieldset {
     border: 1px solid #ff5100; }
     .btn-reset:hover, .btn-reset:active, .btn-reset:focus {
       background-color: #e74900; }
+
+label,
+input {
+  font-family: 'Open Sans', sans-serif; }
+
+input {
+  align-text: center; }
 
 .footer {
   display: flex;
