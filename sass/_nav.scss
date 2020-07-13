@@ -154,7 +154,80 @@ nav {
   
 }
 
+.form-class{
+  margin-top: 2rem;
 
+  @media only screen and (max-width: 400px) {
+    margin-top: 10rem;
+  }
+
+}
+
+// FOR SUB-BTNS
+
+.sub-btns{
+  display: flex;
+  justify-content: center;
+  margin: 6rem auto 0 auto;
+  padding-bottom: 1rem;
+}
+
+.sub-btn {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #2b2b2b;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--1 {
+    margin-right: 5rem;
+
+    &:hover,
+    &:active {
+      border-bottom: 8px solid orange;
+    }
+    
+  }
+
+  &--2 {
+    
+
+    &:hover,
+    &:active {
+      border-bottom: 8px solid green;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FOR MOBILE VERSION MENU- DON'T TOUCH IT 
 
 .burger-menu,
 .burger-close {
@@ -176,3 +249,5 @@ nav {
 .hidden {
   display: none;
 }
+
+

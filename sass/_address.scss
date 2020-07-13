@@ -1,0 +1,50 @@
+.form-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+
+  &--2 {
+    padding-bottom: 3rem;
+  }
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.input-heading {
+  font-size: 1.6rem;
+}
+
+.btn-save--2 {
+  padding: 8px 14px;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: #2daebf;
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #228e9c;
+    border: none;
+  }
+
+  @media only screen and (max-width: 790px) {
+    padding: 8px 10px;
+  }
+}
+
+fieldset {
+  
+}
+
+#country {
+    width: 10rem;
+}
